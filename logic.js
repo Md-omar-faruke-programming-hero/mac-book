@@ -178,7 +178,7 @@ document.getElementById('apply').addEventListener('click',function(){
         var discountPrice= totalCost-applycode;
 
         document.getElementById('subtotal').innerText=discountPrice;
-        document.getElementById('code').innerText= "Promo code applied!";
+        document.getElementById('code').innerText= "Promo code applied! You can change the cost again if you want";
         document.getElementById('code').style.color="green";
 
         document.getElementById('apply').setAttribute('disabled',true);
