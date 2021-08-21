@@ -15,6 +15,7 @@ function memoryChoose(isPriceChange){
     if(isPriceChange==0) {
         var amount8GB= 0;
         var memoryCost8GB= parseInt(document.getElementById('memory').innerText=amount8GB);
+        
       
         var total= bestPrice+memoryCost8GB+storageInnerText+shippingCost;
         document.getElementById('total').innerText= total;
@@ -32,12 +33,18 @@ function memoryChoose(isPriceChange){
  }
 }
 
+
+
 // memory...............................
 document.getElementById('8GB').addEventListener('click',function(){
     memoryChoose(0);
+    var img =document.getElementById('img');
+    img.src="image/ram8gb.jpg"
 })
 document.getElementById('16GB').addEventListener('click',function(){
      memoryChoose(180);
+     var img =document.getElementById('img');
+    img.src="image/ram16gb.jpg"
 })
 
 
@@ -88,12 +95,19 @@ function storageChoose(isPriceChange){
 // Storage..................
 document.getElementById('256GB').addEventListener('click',function(){
     storageChoose(0);
+    var img =document.getElementById('img');
+    img.src="image/ssd256gb.jpg"
 })
 document.getElementById('512GB').addEventListener('click',function(){
     storageChoose(100);
+    var img =document.getElementById('img');
+    img.src="image/ssd512gb.jpg"
+
 })
 document.getElementById('1TB').addEventListener('click',function(){
      storageChoose(180);
+     var img =document.getElementById('img');
+    img.src="image/ssd1tb.jpg"
 })
 
 
@@ -135,9 +149,13 @@ function chooseDeliveryMethod(isPriceChange){
 //  delivery charge
 document.getElementById('freeCharge').addEventListener('click',function(){
     chooseDeliveryMethod(0);
+    var img =document.getElementById('img');
+    img.src="image/mac.png"
 })
 document.getElementById('paid').addEventListener('click',function(){
     chooseDeliveryMethod(20);
+    var img =document.getElementById('img');
+    img.src="image/mac.png"
 })
 
 
