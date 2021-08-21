@@ -1,3 +1,8 @@
+
+// used 3 function for memory, storage and delivery.
+
+
+
 // function for memory
 
 function memoryChoose(isPriceChange){
@@ -5,7 +10,7 @@ function memoryChoose(isPriceChange){
     var storageInnerText= parseInt(document.getElementById('storage').innerText);
     var shippingCost= parseInt(document.getElementById('charge').innerText);
     /////////////////////////////
-   var subtotal= parseInt(document.getElementById('subtotal').innerText=total);
+   
    document.getElementById('code').innerHTML="Apply promo code";
    document.getElementById('code').style.color="red";
    document.getElementById('promocode').placeholder="type 'stevekaku' ";
@@ -56,7 +61,7 @@ function storageChoose(isPriceChange){
     var memotyInnerText= parseInt(document.getElementById('memory').innerText);
     var shippingCost= parseInt(document.getElementById('charge').innerText);
     /////////////////
-    var subtotal= parseInt(document.getElementById('subtotal').innerText=total);
+    
     document.getElementById('code').innerHTML="Apply promo code";
     document.getElementById('code').style.color="red";
     document.getElementById('promocode').placeholder="type 'stevekaku' ";
@@ -119,7 +124,7 @@ function chooseDeliveryMethod(isPriceChange){
     var memotyInnerText= parseInt(document.getElementById('memory').innerText);
     var storageInnerText= parseInt(document.getElementById('storage').innerText);
     /////////////
-    var subtotal= parseInt(document.getElementById('subtotal').innerText=total);
+    
     document.getElementById('code').innerHTML="Apply promo code";
     document.getElementById('code').style.color="red";
     document.getElementById('promocode').placeholder="type 'stevekaku' ";
